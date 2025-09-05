@@ -1,0 +1,41 @@
+{
+    "name": "sharememori/category-sequential-permalinks",
+    "description": "カテゴリ別連番で /category-slug/番号/ を実現するWordPressプラグイン",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "ShareMemori",
+            "email": "info@sharememori.jp"
+        }
+    ],
+    "keywords": [
+        "wordpress",
+        "plugin",
+        "permalinks",
+        "category",
+        "sequential",
+        "seo"
+    ],
+    "homepage": "https://github.com/sharememori/category-sequential-permalinks",
+    "support": {
+        "issues": "https://github.com/sharememori/category-sequential-permalinks/issues",
+        "source": "https://github.com/sharememori/category-sequential-permalinks"
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ShareMemori\\CategorySequentialPermalinks\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs": "phpcs --standard=WordPress .",
+        "cbf": "phpcbf --standard=WordPress ."
+    }
+}
